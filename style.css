@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Prompt;
+    src: url(./fonts/Prompt-Regular.woff);
+}
+
+body {
+    font-family: Prompt;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/004/968/002/original/cute-abstract-modern-background-free-vector.jpg);
+    background-size: cover;
+}
+
+div {
+    margin: 0 auto;
+}
+
+h3 {
+    background-color: green;
+    background-position: center;
+}
+
+h1 {
+    font-size: 150px;
+    margin-bottom: 0px;
+    margin-top: 1px;
+}
+
+.button {
+    align-content: center;
+}
