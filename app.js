@@ -13,10 +13,8 @@ function toWorthinessPrograme() {
     let B = toValue(document.getElementById('priceB').value, document.getElementById('earnB').value);
 
     if (A > B) {
-        let value = A - B
-        display('result', `ชุดที่ 2 คุ้มกว่าตั้ง ${value.toFixed(2)} บาท เลยนะ 🎉`)
+        display('result', `${B} บาท/ปริมาตร ชุดที่ 2 คุ้มกว่านะ 🎉`)
     } else {
-        let value = B - A
-        display('result', `ชุดที่ 1 คุ้มกว่าตั้ง ${value.toFixed(2)} บาท เลยนะ 🎉`)
+        display('result', `${A} บาท/ปริมาตร ชุดที่ 1 คุ้มกว่านะ 🎉`)
     }
 };
