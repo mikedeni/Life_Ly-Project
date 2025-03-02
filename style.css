@@ -3,27 +3,59 @@
     src: url(./fonts/Prompt-Regular.woff);
 }
 
+* {
+    margin: 0;
+}
+
 body {
     font-family: Prompt;
-    background-image: url(https://static.vecteezy.com/system/resources/previews/004/968/002/original/cute-abstract-modern-background-free-vector.jpg);
+    background-image: url("./public/images/background.jpg");
     background-size: cover;
 }
 
-div {
-    margin: 0 auto;
-}
-
-h3 {
-    background-color: green;
-    background-position: center;
-}
-
 h1 {
-    font-size: 150px;
-    margin-bottom: 0px;
-    margin-top: 1px;
+    font-size: 4rem;
 }
 
-.button {
+button {
     align-content: center;
+    padding: 15px 30px 15px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: white;
+    gap: 50px;
+    font-size: large;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
 }

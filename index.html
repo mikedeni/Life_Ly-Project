@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="th">
+    <head>
+        <title>Life_Ly</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-<head>
-    <title>Life_Ly</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <h1 class="head" align="center">Life_Ly</h1>
-    <h4 class="head" align="center">โปรแกรมคำนวณความคุ้มค่าของสินค้า</h4>
-    <p>ชุดที่ 1</p><p>ราคา : ปริมาตร</p><input id="priceA" type="number" align="middle">
-    <input id="earnA" type="number" align="middle"> <br>
-    <p>ชุดที่ 2</p><p>ราคา : ปริมาตร</p><input id="priceB" type="number" align="middle">
-    <input id="earnB" type="number" align="middle"> <br><br>
-    <button onclick="toWorthinessPrograme()" class="button">คำนวณ</button>
-    <h3 id="result" align="center" align="middle"></h3>
-    <script src="app.js"></script>
-</body>
-
+    <body>
+        <div class="header">
+            <h1>🛒 Life_Ly</h1>
+            <h3>โปรแกรมคำนวณความคุ้มค่าของสินค้า เลือกดีประหยัดตังขึ้น💸</h3>
+            <p>@mikedeni</p>
+        </div>
+        <div class="container">
+            <div>
+                <h4>📜 สินค้าชุดที่ 1</h4>
+                <span>💰 ราคา:</span>
+                <input id="priceA" type="number" />
+                <span>📦 ปริมาตร:</span>
+                <input id="earnA" type="number" />
+            </div>
+            <div>
+                <h4>📜 สินค้าชุดที่ 2</h4>
+                <span>💰 ราคา:</span>
+                <input id="priceB" type="number" />
+                <span>📦 ปริมาตร:</span>
+                <input id="earnB" type="number" />
+            </div>
+            <button onclick="toWorthinessPrograme()">💡 คำนวณ</button>
+        </div>
+        <script src="app.js"></script>
+    </body>
 </html>

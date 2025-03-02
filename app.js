@@ -1,24 +1,30 @@
 // ราคา / ปริมาตร
 function toValue(price, earn) {
-    let value = price / earn
-    return value
+    let value = price / earn;
+    return value.toFixed(2);
 }
 
 function display(elementID, value) {
-    document.getElementById(elementID).innerHTML = value
+    document.getElementById(elementID).innerHTML = value;
 }
 
 function toWorthinessPrograme() {
-    let A = toValue(document.getElementById('priceA').value, document.getElementById('earnA').value);
-    let B = toValue(document.getElementById('priceB').value, document.getElementById('earnB').value);
+    let priceA = document.getElementById("priceA").value;
+    let earnA = document.getElementById("earnA").value;
+    let priceB = document.getElementById("priceB").value;
+    let earnB = document.getElementById("earnB").value;
 
-    if (A > B) {
-        display('result', `สินค้าชิ้นที่ 1 : ${A.toFixed(2)} บาท/ปริมาตร <br>
-        สินค้าชิ้นที่ 2 : ${B.toFixed(2)} บาท/ปริมาตร <br>
-        **ดังนั้น สินค้าชิ้นที่ 2 คุ้มกว่านะ 🎉`)
-    } else {
-        display('result', `สินค้าชิ้นที่ 1 : ${A.toFixed(2)} บาท/ปริมาตร <br>
-        สินค้าชิ้นที่ 2 : ${B.toFixed(2)} บาท/ปริมาตร <br>
-        **ดังนั้น สินค้าชิ้นที่ 1 คุ้มกว่านะ 🎉`)
+    if (!priceA || !earnA || !priceB || !earnB) {
+        alert("❗ กรุณากรอกข้อมูลให้ครบถ้วนทั้งสองชุด");
+        return;
     }
-};
+
+    let A = toValue(priceA, earnA);
+    let B = toValue(priceB, earnB);
+
+    alert(
+        `✨ สินค้าชุดที่ ${
+            A > B ? "2" : "1"
+        } คุ้มกว่านะ 💵\n📜 สินค้าชิ้นที่ 1 : ${A} บาท/ปริมาตร\n📜 สินค้าชิ้นที่ 2 : ${B} บาท/ปริมาตร`
+    );
+}
